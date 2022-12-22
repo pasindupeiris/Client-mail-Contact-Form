@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Spray+Paint&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Source Sans Pro;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252a25;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#contact {
+    width: 1200px;
+    height: auto;
+    padding: 10px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #223f31;
+    border-radius: 8px;
+    box-shadow: 13px 0px 37px 6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -10px 0px 37px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -13px 0px 37px 6px rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+h1 {
+    color: #d3f3e3;
+    width: auto;
+    text-align: left;
+    font-size: 2rem;
+    margin: 10px 0px 25px;
+}
+
+::placeholder {
+    color: #3e3e46;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.form-sec-1,
+.form-sec-2 {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addr {
+    width: 1020px;
+    height: 50px;
+    padding: 15px;
+}
+
+form input,
+textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #d3f3e3;
+    box-shadow: 0px -6px 8px 3px rgba(0, 0, 0, 0.1), -13px 16px 23px -8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"] {
+    width: 500px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+form input[type="tel"],
+form input[type="email"] {
+    width: 500px;
+    height: 50px;
+    margin: 15px 10px;
+}
+
+textarea {
+    width: 1020px;
+    height: 250px;
+    margin: 15px 10px;
+}
+
+form input[type="submit"] {
+    width: 250px;
+    height: 50px;
+    margin: 0px 10px;
+    background-color: #21825c;
+    color: #fffff1;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e31b1b;
+}
+
+.success {
+    width: 400px;
+    height: 200px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    color: #242222;
+    box-shadow: 0px 0px 3px 5px #00000021;
+}
+
+.success a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.success h1 {
+    margin-top: 30px;
+}
+
+.img-block {
+    width: 80px;
+    position: absolute;
+    top: -30px;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+#close {
+    cursor: pointer;
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@media (max-width:800px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+    #contact {
+        width: 100%;
+        height: auto;
+        padding: 10px 0px 30px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        background-color: #223f31;
+        border-radius: 8px;
+    }
+    .form-sec-4 textarea {
+        width: 90%;
+    }
+    .form-sec-1 input[type="text"] {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .form-sec-1 {
+        display: block;
+        margin-bottom: 0;
+    }
+    .form-sec-2 input[type="tel"],
+    .form-sec-2 input[type="email"] {
+        width: 90%;
+        margin: 10px;
+    }
+    .form-sec-2 {
+        margin-top: 0%;
+        display: block;
+    }
+    .form-sec-3 input[type="text"] {
+        margin: 10px;
+    }
+    #addr {
+        width: 90%;
+    }
+    .form-sec-5 input[type="submit"] {
+        width: 90%;
+    }
+    h1 {
+        margin: 15px;
+    }
+    .success {
+        width: 95%;
+        height: 35%;
+        text-align: center;
+        top: 40px;
+    }
+}
